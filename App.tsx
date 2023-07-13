@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import { ThemeProvider } from 'styled-components'
 import { ActivityIndicator, SafeAreaView, StatusBar } from 'react-native'
-import { NewGroup } from '@screens/NewGroup'
+import { Players } from '@screens/Players'
 import { defaultTheme } from '@theme/index'
 import {
   useFonts,
@@ -20,7 +20,7 @@ export default function App() {
         barStyle="light-content"
         translucent
       />
-      {fontsLoaded ? <NewGroup /> : <Loading />}
+      {fontsLoaded ? <Players /> : <Loading />}
     </ThemeProvider>
   )
 }
