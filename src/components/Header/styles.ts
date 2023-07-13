@@ -3,6 +3,7 @@ import { SimpleLineIcons } from '@expo/vector-icons'
 
 export const Container = styled.View`
   width: 100%;
+  margin-top: 50px;
 
   flex-direction: row;
   align-items: center;
@@ -20,6 +21,6 @@ export const BackButton = styled.TouchableOpacity`
 
 export const BackIcon = styled(SimpleLineIcons).attrs(({ theme }) => ({
   name: 'arrow-left',
-  size: 36,
+  size: 32,
   color: theme.COLORS.WHITE,
 }))``

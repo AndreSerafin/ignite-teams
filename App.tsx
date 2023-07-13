@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import { ThemeProvider } from 'styled-components'
-import { ActivityIndicator, StatusBar } from 'react-native'
-import { Groups } from '@screens/Groups'
+import { ActivityIndicator, SafeAreaView, StatusBar } from 'react-native'
+import { NewGroup } from '@screens/NewGroup'
 import { defaultTheme } from '@theme/index'
 import {
   useFonts,
@@ -20,7 +20,7 @@ export default function App() {
         barStyle="light-content"
         translucent
       />
-      {fontsLoaded ? <Groups /> : <Loading />}
+      {fontsLoaded ? <NewGroup /> : <Loading />}
     </ThemeProvider>
   )
 }
