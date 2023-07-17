@@ -1,7 +1,8 @@
-import styled from 'styled-components/native'
 import { UsersIcon } from '@components/UsersIcon'
+import { SafeAreaView } from 'react-native-safe-area-context'
+import styled from 'styled-components/native'
 
-export const Container = styled.View`
+export const Container = styled(SafeAreaView)`
   padding: 20px 16px;
 
   flex: 1;

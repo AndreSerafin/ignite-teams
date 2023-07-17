@@ -1,9 +1,8 @@
-import styled from 'styled-components/native'
 import { SimpleLineIcons } from '@expo/vector-icons'
+import styled from 'styled-components/native'
 
 export const Container = styled.View`
   width: 100%;
-  margin-top: 50px;
 
   flex-direction: row;
   align-items: center;
